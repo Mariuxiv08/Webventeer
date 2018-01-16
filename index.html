@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Webventeer</title>
-    <link rel="stylesheet" type="text/css" href="reset.css" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" /> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript.js"></script>
 </head>
 
 <body>
@@ -19,25 +21,26 @@
             </div>
             <div class="col-md-6" class="searchbar">
                 <span>Category</span>
-                <select>
+                <select id="categories">
                     <option value="kids">Kids</option>
                     <option value="families">Families</option>
-                    <option value="millenials">Millenials</option>
+                    <option value="teens">Teens</option>
                 </select>
                 <br />
                 <span>Location</span>
-                <input type="text" />
+                <input type="text" id="location"/>
                 <button id="geoLocator">Locate me</button>
                 <br />
-                <span>Resutls</span>
-                <select>
-                    <option value="1">5</option>
-                    <option value="2">10</option>
-                    <option value="3">20</option>
-                    <option value="3">All</option>
+                <span>Results</span>
+                <div> 
+                <select id="resultsAmount">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="All">All</option>
                 </select>
                 <br />
-                <button>Search</button>
+                <button id="searchBtn">Search</button>
                 <button>Clear</button>
             </div>
         </div>
@@ -63,7 +66,7 @@
                 <button>Add to Calendar</button>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="results">
             <div class="col-md-12">
                 <h3>Event Title</h3>
                 <p>Event description</p>
@@ -97,8 +100,12 @@
                 </div>
             </div>
         </div>
+
 </body>
 <footer> WebVenteer 2018 <a href="#">ourcompany@gmail.com</a>
 </footer>
 
 </html>
+
+
+
