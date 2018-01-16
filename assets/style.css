@@ -1,0 +1,24 @@
+body{
+	font-family: 'Dosis', sans-serif;
+}
+
+ 
+/*about section*/
+.bio-image{
+	max-height: 150px;
+	border-radius: 50%;
+	margin-top: 6px;
+
+}
+.wrap-image{
+	display: inline-block;
+	float: left;
+	margin-right: 5%;
+}
+.col-md-12{
+	margin-left: 10%;
+}
+footer{
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
