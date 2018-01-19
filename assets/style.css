@@ -1,0 +1,70 @@
+body{
+    font-family: 'Dosis', sans-serif;
+}
+ 
+/*about section*/
+.bio-image{
+    max-height: 150px;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+.wrap-image{
+    display: inline-block;
+    float: left;
+    margin-right: 5%;
+}
+footer{
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.title {
+  font-family: "Lobster", 'cursive', "serif";
+  font-size: 50px;
+  text-shadow: 3px 2px 9px rgba(150, 150, 150, 1);
+}
+.welcome {
+    font-family: "Lobster", 'cursive', 'serif';
+    font-size: 100px;
+    text-shadow: 3px 2px 9px rgba(150, 150, 150, 1);
+    text-align: center; 
+}
+.lead {
+    text-align: center;
+}
+.jumbotron {
+    background: linear-gradient(to bottom, transparent 0%, white 100%), url("../images/background.jpg") no-repeat;
+    background-size: 100%, 100%;
+}
+.jumbotron::before {
+    content: "";
+    display: block;
+    height: 60px;
+}
+.col-md-4 {
+    padding: 40px;
+}
+.clickBtn {
+    margin: 0px 10px 0px 10px;
+}
+.bg, .bg-filter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.bg-filter {
+  z-index: -99;
+  opacity: 0.2;
+  background: -webkit-linear-gradient(rgba(49, 224, 247, 1) 0%, rgba(90, 77, 184, 1) 100%);
+  background: -moz-linear-gradient(rgba(49, 224, 247, 1) 0%, rgba(90, 77, 184, 1) 100%);
+  background: -o-linear-gradient(rgba(49, 224, 247, 1) 0%, rgba(90, 77, 184, 1) 100%);
+  background: linear-gradient(rgba(49, 224, 247, 1) 0%, rgba(90, 77, 184, 1) 100%);
+}
+
+

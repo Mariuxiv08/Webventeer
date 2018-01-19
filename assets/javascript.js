@@ -22,7 +22,18 @@ $(document).ready(function(){
 	})
 	.catch(error => {
 		console.error(error);
+	})
 
-	});
-    }) 
+})
+    $('#aboutLink').on('click', function() {
+    $("html, body").animate({ scrollTop: $('html, body').height() + "3000" });
+});
+    $('#searchLink').on('click', function() {
+    const top = $('#search').offset().top;
+    $("html, body").animate({ scrollTop: top + "580" });
+});
+     $('#homeLink').on('click', function() {
+    const top = $('#search').offset().top;
+    $("html, body").animate({ scrollTop: top + "0" });
+});
 })
