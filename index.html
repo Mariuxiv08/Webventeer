@@ -95,6 +95,36 @@
         </form>
         <div class="row">
             <div class="col-md-12">
+                <!-- Button to close the overlay navigation -->
+                <div class="overlay-content">
+                    <span>Category</span>
+                    <select>
+                        <option value="kids">Kids</option>
+                        <option value="families">Families</option>
+                        <option value="millenials">Millenials</option>
+                    </select>
+                    <br />
+                    <span>Location</span>
+                    <input type="text" />
+                    <button id="geoLocator">Locate me</button>
+                    <br />
+                    <span>Resutls</span>
+                    <select>
+                        <option value="1">5</option>
+                        <option value="2">10</option>
+                        <option value="3">20</option>
+                        <option value="3">All</option>
+                    </select>
+                    <br />
+                    <button>Search</button>
+                    <button>Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
                 <h3>Event Title</h3>
                 <p>Event description</p>
                 <p>Event Place</p>
@@ -112,9 +142,7 @@
                 <button>Add to Wishlist</button>
                 <button>Add to Calendar</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-4">
                 <h3>Event Title</h3>
                 <p>Event description</p>
                 <p>Event Place</p>
@@ -144,10 +172,13 @@
                 <img class="bio-image" src="images/patricia.jpg" alt="Patricia">
                 <a href="https://github.com/patstep">Github</a>
                 <section class="contact-info"> Add peronal e-mail number </section>
+
             </div>
         </div>
+    </div>
+    <!-- Page jQuery -->
+    <script src="assets/javascript.js"></script>
 </body>
 <footer> WebVenteer 2018 <a href="#">ourcompany@gmail.com</a>
 </footer>
 </html>
-
