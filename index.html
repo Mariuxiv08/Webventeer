@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="UTF-8">
     <title>Webventeer</title>
@@ -10,9 +11,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/javascript.js"></script>
 </head>
+
 <body>
-<!-- <video autoplay loop poster class="bg" src="http://ak1.picdn.net/shutterstock/videos/4195021/preview/stock-footage-people-walking-in-city-night-background-pedestrians-walking-in-city-night-with-lights-out-of-focus.mp4">
-</video> -->
+    <video autoplay loop poster class="bg" src="http://ak1.picdn.net/shutterstock/videos/4195021/preview/stock-footage-people-walking-in-city-night-background-pedestrians-walking-in-city-night-with-lights-out-of-focus.mp4">
+    </video>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #F7F7F7;">
         <h1 class="title">Webventeer</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,6 +29,9 @@
                     <a class="nav-link" href="#search" id="searchLink">Search</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="firebase.html">Sign in</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#" id="aboutLink">About Us</a>
                 </li>
             </ul>
@@ -35,26 +40,27 @@
     <div class="container" id="search">
         <div class="row">
             <div class="col-md-12">
-                    <div class="jumbotron" id="home">
-        <h1 class="welcome">Welcome to Webventeer</h1>
-        <p class="lead">Where we make your volenteering dreams come true! Or something other... Anyways, we provide an easy search method for volunteer events near you. Or from 100 miles away if you're feeling maverick. </p>
-        <hr class="my-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    You can search saftly by selecting one of the defined categories! Want to do something with family, then no worries. Just pick the "family" category and the website will filter the results to your liking!
-                </div>
-                <div class="col-md-4">
-                    Want to save the date? We provided a method to add the event to your calendar! .... Assuming we actually learn how to work with google maps and stuff. Baby steps people.
-                </div>
-                <div class="col-md-4">
-                    You can also create an account with us! With the account, you can.... um... Look, we're just learning this stuff and we got alot of ambitious ideas. Just bear with us and we'll bring the best website ever conceived, I swear! STOP JUDGING!
+                <div class="jumbotron" id="home">
+                    <h1 class="welcome">Welcome to Webventeer</h1>
+                    <p class="lead">Where we make your volenteering dreams come true! Or something other... Anyways, we provide an easy search method for volunteer events near you. Or from 100 miles away if you're feeling maverick. </p>
+                    <hr class="my-4">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                You can search saftly by selecting one of the defined categories! Want to do something with family, then no worries. Just pick the "family" category and the website will filter the results to your liking!
+                            </div>
+                            <div class="col-md-4">
+                                Want to save the date? We provided a method to add the event to your calendar! .... Assuming we actually learn how to work with google maps and stuff. Baby steps people.
+                            </div>
+                            <div class="col-md-4">
+                                You can also create an account with us! With the account, you can.... um... Look, we're just learning this stuff and we got alot of ambitious ideas. Just bear with us and we'll bring the best website ever conceived, I swear! STOP JUDGING!
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-            </div>
-        </div>
+        
         <form>
             <div class="form-group">
                 <label for="categories">Category</label>
@@ -94,7 +100,6 @@
             </div>
         </form>
     </div>
-
     <div class="container">
         <div id="resultsContainer">
             <div>
@@ -112,8 +117,6 @@
                 <img src="#" />
             </div>
         </div>
-
-
         <div class="row">
             <a href="#about">About Us</a>
             <div class="col-md-3 left" id="main-bio">
@@ -135,11 +138,11 @@
                 <img class="bio-image" src="images/patricia.jpg" alt="Patricia">
                 <a href="https://github.com/patstep">Github</a>
                 <section class="contact-info"> Add peronal e-mail number </section>
-
             </div>
         </div>
     </div>
 </body>
 <footer> WebVenteer 2018 <a href="#">ourcompany@gmail.com</a>
 </footer>
+
 </html>

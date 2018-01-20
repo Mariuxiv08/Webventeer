@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Webventeer</title>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript.js"></script>
+</head>
+
+<body>
+    <video autoplay loop poster class="bg" src="http://ak1.picdn.net/shutterstock/videos/4195021/preview/stock-footage-people-walking-in-city-night-background-pedestrians-walking-in-city-night-with-lights-out-of-focus.mp4">
+    </video>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #F7F7F7;">
+        <h1 class="title">Webventeer</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home" id="homeLink">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#search" id="searchLink">Search</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="signInLink">Sign In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="aboutLink">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron" id="home">
+                    <h1 class="welcome">Welcome to Webventeer</h1>
+                    <p class="lead">Where we make your volenteering dreams come true! Or something other... Anyways, we provide an easy search method for volunteer events near you. Or from 100 miles away if you're feeling maverick. </p>
+                    <hr class="my-4" />
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                You can search saftly by selecting one of the defined categories! Want to do something with family, then no worries. Just pick the "family" category and the website will filter the results to your liking!
+                            </div>
+                            <div class="col-md-4">
+                                Want to save the date? We provided a method to add the event to your calendar! .... Assuming we actually learn how to work with google maps and stuff. Baby steps people.
+                            </div>
+                            <div class="col-md-4">
+                                You can also create an account with us! With the account, you can.... um... Look, we're just learning this stuff and we got alot of ambitious ideas. Just bear with us and we'll bring the best website ever conceived, I swear! STOP JUDGING!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <form>
+                        <div class="form-group">
+                            <label for="categories">Category</label>
+                            <select class="form-control" id="categories">
+                                <option value="kids">Kids</option>
+                                <option value="families">Families</option>
+                                <option value="millenials">Millenials</option>
+                            </select>
+                        </div>
+                        <br />
+                        <div class="form-group row">
+                            <label for="location" class="col-md-2 col-form-label">Location</label>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control mb-2" id="location" />
+                            </div>
+                            <div class="col">
+                                <button id="geoLocator" class="btn btn-primary mb-2">Locate me</button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group row">
+                            <label for="resultsAmount" class="col-md-1 col-form-label">Resutls</label>
+                            <select class="form-control col-md-5" id="resultsAmount">
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="99">All</option>
+                            </select>
+                            <div class="col-md-6"></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-5"></div>
+                            <button id="searchBtn" class="btn btn-primary col-md-1">Search</button>
+                            <button id="clearForm" class="btn btn-danger col-md-1 clickBtn">Clear</button>
+                            <div class="col-md-5"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" id="events-list">
+                    <div id="resultsContainer">
+                        <div>
+                            <a href="#"><h4>Event Title</h4></a>
+                            <p>Event description</p>
+                            <p>Event Location</p>
+                            <p>Event Time</p>
+                            <img src="#" />
+                        </div>
+                        <div>
+                            <a href="#"><h4>Event Title</h4></a>
+                            <p>Event description</p>
+                            <p>Event Location</p>
+                            <p>Event Time</p>
+                            <img src="#" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2>About Us</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="https://github.com/aguirreh8">
+                            <img class="bio-image" src="images/henry.png" alt="Henry">                            
+                        </a>
+                        <section class="contact-info"> Add peronal e-mail number </section>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/Mariuxiv08">
+                            <img class="bio-image" src="images/marixui.png" alt="Mariuxi">                            
+                        </a>
+                        <section class="contact-info"> Add peronal e-mail number </section>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/jamesnewman12">
+                            <img class="bio-image" src="images/james.png" alt="James">                            
+                        </a>
+                        <section class="contact-info"> Add peronal e-mail number </section>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="https://github.com/patstep">
+                            <img class="bio-image" src="images/patricia.jpg" alt="Patricia">
+                        </a>
+                        <section class="contact-info"> Add peronal e-mail number </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer> WebVenteer 2018 <a href="#">ourcompany@gmail.com</a>
+</footer>
+
+</html>
