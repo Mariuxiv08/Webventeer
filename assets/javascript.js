@@ -69,16 +69,17 @@ $(document).ready(function() {
     });
 
     $('#aboutLink').on('click', function() {
-        $("html, body").animate({ scrollTop: $('html, body').height() + "3000" });
+        $("html, body").animate({ scrollTop: $('html, body').height() + 3000 });
     });
 
     $('#searchLink').on('click', function() {
-        const top = $('#search').offset().top;
-        $("html, body").animate({ scrollTop: top + "580" });
+        // const top = $('#search').offset().top;
+        $("html, body").animate({ scrollTop: $('#search').height() + 120 });
     });
 
     $('#homeLink').on('click', function() {
-        const top = $('#search').offset().top;
+        const top = $('#home').offset().top;
+
         $("html, body").animate({ scrollTop: top + "0" });
     });
 })
