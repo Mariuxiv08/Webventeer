@@ -79,6 +79,7 @@ $(document).ready(function() {
 
     $('#homeLink').on('click', function() {
         const top = $('#home').offset().top;
+
         $("html, body").animate({ scrollTop: top + "0" });
     });
 })
