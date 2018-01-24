@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         proxyUrl = 'https://shielded-hamlet-43668.herokuapp.com/';
         apiKey = "hzLFnwMG6SqhpZmc"
-        queryURL = "http://api.eventful.com/json/events/search?app_key=" + apiKey + "&keywords=" + eventType + category + "&location=" + location + "&page_size=" + resultsAmount;
+        queryURL = "http://api.eventful.com/json/events/search?app_key=" + apiKey + "&keywords=volunteer+" + category + "&location=" + location + "&page_size=" + resultsAmount;
 
         $.ajax({
                 url: proxyUrl + queryURL,
@@ -44,7 +44,7 @@ $(document).ready(function() {
                     const newResult = $("<div>");
                     const resultLink = $("<a>");
                     const resultTitle = $("<h4>");
-                    const resultDescription = $("<p>");
+                    const resultDescription = $("<p class='paralignment'>");
                     const resultLocation = $("<p>");
                     const resultTime = $("<p>");
                     const resultMap = $("<img>");
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
     $('#searchLink').on('click', function() {
         // const top = $('#search').offset().top;
-        $("html, body").animate({ scrollTop: $('#search').height() + 120 });
+        $("html, body").animate({ scrollTop: $('#search-box').height() + 120 });
     });
 
     $('#homeLink').on('click', function() {
