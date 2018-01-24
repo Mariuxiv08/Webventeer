@@ -22,6 +22,7 @@ footer{
   font-family: "Lobster", 'cursive', "serif";
   font-size: 50px;
   text-shadow: 3px 2px 9px rgba(150, 150, 150, 1);
+  margin-left: 10%;
 }
 .welcome {
     font-family: "Lobster", 'cursive', 'serif';
@@ -80,4 +81,16 @@ footer{
 .alignThis {
   padding-left: 15px;
 
+}
+
+.signinpag {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.row{
+  margin-bottom: 2%;
+}
+.card-title{
+  margin-top: 2%;
+  margin-left: 2%;
 }
