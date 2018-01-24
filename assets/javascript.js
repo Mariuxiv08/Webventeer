@@ -56,7 +56,7 @@ $(document).ready(function() {
                     const newResult = $("<div>");
                     const resultLink = $("<a>");
                     const resultTitle = $("<h4 class='result-title'>");
-                    const resultDescription = $("<p>");
+                    const resultDescription = $("<p class='paralignment'>");
                     const resultLocation = $("<p>");
                     const resultTime = $("<p>");
                     const resultMap = $("<img class='map'>");

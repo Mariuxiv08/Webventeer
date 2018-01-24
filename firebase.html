@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="assets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js "></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-app.js "></script>
     <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js "></script>
@@ -19,7 +23,6 @@
     
     </script>
     <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
     <script type="text/javascript">
       // FirebaseUI config.
       var uiConfig = {
@@ -40,13 +43,19 @@
 </head>
 
 <body>
-
-    <h1>Welcome to Webventeer.</h1>
-    <h2>Please Sign in to continue.</h2>
-
-    
-
+<video autoplay loop poster class="bg" src="https://static.videezy.com/system/resources/previews/000/007/024/original/timelapse_clouds.mp4"></video>
+<div class="container" style="padding-left: 20%; padding-right: 20%; padding-top: 20%; padding-bottom: 20%;">
+ <div class="card text-center">
+  <div class="card-header">
+   <h1 class="title">Webventeer</h1>
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Please sign up for our services!</h4>
     <div id="firebaseui-auth-container"></div>
+  </div>
+
+</div>
+</div>
 </body>
 
 </html>
