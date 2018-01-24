@@ -16,6 +16,7 @@ body{
 footer{
     margin-bottom: 2%;
     margin-top: 2%;
+    text-align: center;
 }
 .title {
   font-family: "Lobster", 'cursive', "serif";
